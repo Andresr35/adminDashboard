@@ -8,7 +8,7 @@ body {
   padding: 0;
   overflow-y: auto;
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 5fr;
 }
 nav {
@@ -48,11 +48,12 @@ div {
 header {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 2fr;
-  row-gap: 30px;
+  grid-template-rows: 1fr 1fr;
+  /* row-gap: 30px; */
   align-items: center;
   padding: 10px 10px;
   box-sizing: border-box;
+  /* max-height: 20vh; */
 }
 header .searchBar {
   align-items: center;
@@ -60,16 +61,17 @@ header .searchBar {
   grid-template-columns: 1fr 8fr;
 }
 header .searchBar img {
-  width: 50%;
+  width: 30%;
+  margin: auto;
 }
 header .bar {
   background-color: rgba(157, 161, 157, 0.247);
-  border-radius:  20px;
+  border-radius: 20px;
   height: 100%;
   width: 85%;
 }
 header .profile {
-    padding-left: 40px;
+  padding-left: 40px;
   align-items: center;
   text-align: center;
   justify-items: center;
@@ -77,26 +79,39 @@ header .profile {
   grid-template-columns: 1fr 1fr 1fr;
 }
 header .profile img {
-  height: 50%;
+  width: 30%;
 }
-header .profile .profilePic{
-    background-color: #065f46;
-    height: 40%;
-    width: 40%;
-    border-radius: 100px;
+header .profile .profilePic {
+  background-color: #065f46;
+  height: 70%;
+  width: 23%;
+  border-radius: 100px;
 }
-header .welcome{
-    display: grid;
-    grid-template-columns: 1fr 8fr 2fr 2fr 2fr;
+header .welcome {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
 }
-header .welcome .profilePic{
-    background-color: #065f46;
-    border-radius: 100px;
+header .welcome .profilePic {
+  background-color: #065f46;
+  width: 55%;
+  height: 100%;
+  border-radius: 100px;
+  margin: auto;
 }
-header .welcome .buttons{
-    background-color: var(--green);
-    color: white;
-    border-radius: 50px;
+header .actionButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 20px;
+}
+header .actionButtons .buttons {
+  background-color: var(--green);
+  color: white;
+  padding: 5px 0px;
+  border-radius: 70px;
 }
 .mainContent {
   background-color: #c4d1cb;
